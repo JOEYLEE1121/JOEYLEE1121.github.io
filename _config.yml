@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Joey Lee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Chang Jun Lee"
 description              : "An amazing website."
 url                      : "https://JOEYLEE1121.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
