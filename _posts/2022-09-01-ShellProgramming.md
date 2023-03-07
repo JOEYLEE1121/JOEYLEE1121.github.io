@@ -13,7 +13,21 @@ Score: 11.5 / 12 (bonus point not included)
 
 ## Task
 
+![taskp1]({{site.url}}/images/2022-09-01-ShellProgramming/taskp1.png)
 
+![taskp2]({{stie.url}}/images/2022-09-01-ShellProgramming/taskp2.png)
+
+![taskp3]({{stie.url}}/images/2022-09-01-ShellProgramming/taskp3.png)
+
+![taskp4]({{stie.url}}/images/2022-09-01-ShellProgramming/taskp4.png)
+
+![taskp5]({{site.url}}/images/2022-09-01-ShellProgramming/taskp5.png)
+
+![taskp6]({{site.url}}/images/2022-09-01-ShellProgramming/taskp6.png)
+
+![taskp7]({{site.url}}/images/2022-09-01-ShellProgramming/taskp7.png)
+
+![taskp8]({{site.url}}/images/2022-09-01-ShellProgramming/taskp8.png)
 
 ## Code
 
@@ -902,7 +916,10 @@ int with_pipe() // handle os operations with pipe
 
 ## Sample run
 
+![sampleRun]({{site.url}}/images/2022-09-01-ShellProgramming/sampleRun.png)
 
+- Test the above code in a linux environment only. 
+- Follow the complie instruction in the code, and it will work!
 
 ## Improvements
 

@@ -13,6 +13,14 @@ score: 5.0 / 5.0
 
 ## Task
 
+![taskp1]({{site.url}}/images/2023-02-16-SocketProgramming/taskp1.png)
+
+![taskp2]({{site.url}}/images/2023-02-16-SocketProgramming/taskp2.png)
+
+![taskp3]({{site.url}}/images/2023-02-16-SocketProgramming/taskp3.png)
+
+![taskp4]({{site.url}}/images/2023-02-16-SocketProgramming/taskp4.png)
+
 
 
 ## Code
@@ -317,3 +325,7 @@ else:
 
 ## Output
 
+![output]({{site.url}}/images/2023-02-16-SocketProgramming/output.png)
+
+- Note that the test is done when both the server and client is on the same computer.
+  - Transmission Rate gets slower when testing with different computers for the server and the client. Try testing out with the code above!
