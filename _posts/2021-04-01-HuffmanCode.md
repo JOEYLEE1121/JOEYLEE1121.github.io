@@ -1,15 +1,15 @@
 ---
 layout: single
 title: "Huffman Code"
-categories: "project"
+categories: "school-project"
 tag: [python]
 toc: true
 toc_sticky: true
 ---
-score: 100/100
 
-# For lossless message encryption
+Lossless message encryption
 
+score: 100 / 100
 ## About
 
 Huffman code is a lossless data compression technique used to reduce the size of data without losing any information. It was invented by David A. Huffman in 1952. The basic idea behind Huffman coding is to assign a variable-length code to each symbol in the input data, where the length of the code for each symbol is based on its frequency of occurrence in the input data. The more frequently a symbol occurs, the shorter its corresponding code will be.
