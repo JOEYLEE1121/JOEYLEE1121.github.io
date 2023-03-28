@@ -11,7 +11,7 @@ toc_sticky: true
 
 Score: 11.5 / 12 (bonus point not included)
 
-## Task
+## Task (material reveal upon agreement)
 
 ![taskp1]({{site.url}}/images/2022-09-01-ShellProgramming/taskp1.png)
 

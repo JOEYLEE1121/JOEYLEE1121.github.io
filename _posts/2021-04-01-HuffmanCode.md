@@ -186,7 +186,7 @@ infile.close()
 print(line)
 ```
 
-## Performance
+## Result
 
 ### Input Sample
 

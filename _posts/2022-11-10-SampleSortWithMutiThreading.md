@@ -13,21 +13,7 @@ Score: 8.5 / 10.0
 
 ## Task
 
-![taskp1]({{site.url}}/images/2022-11-10-SampleSortWithMutiThreading/taskp1-8168612.png)
-
-![taskp2]({{site.url}}/images/2022-11-10-SampleSortWithMutiThreading/taskp2.png)
-
-![taskp3]({{site.url}}/images/2022-11-10-SampleSortWithMutiThreading/taskp3.png)
-
-![taskp4]({{site.url}}/images/2022-11-10-SampleSortWithMutiThreading/taskp4.png)
-
-![taskp5]({{site.url}}/images/2022-11-10-SampleSortWithMutiThreading/taskp5.png)
-
-![taskp6]({{site.url}}/images/2022-11-10-SampleSortWithMutiThreading/taskp6.png)
-
-![taskp7]({{site.url}}/images/2022-11-10-SampleSortWithMutiThreading/taskp7.png)
-
-
+Design a multithreading algorithm that runs faster than normal quick sort.
 
 
 ## Code

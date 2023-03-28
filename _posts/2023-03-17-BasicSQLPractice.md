@@ -11,9 +11,91 @@ Basic SQL Query Practice with PHP files
 
 ## Question
 
-![p1]({{site.url}}/images/2023-03-17-BasicSQLPractice/p1.png)
-![p2]({{site.url}}/images/2023-03-17-BasicSQLPractice/p2.png)
-![p3]({{site.url}}/images/2023-03-17-BasicSQLPractice/p3.png)
+| Table Name        | Attributes                                                   | Foreign Key         |
+| ----------------- | ------------------------------------------------------------ | ------------------- |
+| Member            | member_ID, name, email, contact_number                       | None                |
+| Group Order       | order_ID, member_ID                                          | member_ID           |
+| Package           | package_ID, owner_ID, order_ID, weight                       | owner_ID, order_ID  |
+| HomeDeliveryOrder | order_ID, address                                            | order_ID            |
+| LocerPickupOrder  | order_ID, locker_ID, cell_number, arrival_datetime, collect_datetime | order_ID, locker_ID |
+| ServiceArea       | service_area_ID, name, parent_area_ID                        | parent_area_ID      |
+| Locker            | locker_ID, service_area_ID, name                             | service_area_ID     |
+
+Given the structure, design an sql table and queries that answers the following questions:
+
+- **Q1. Display the member_ID, name, email and contact_number of the member(s) whose name has “tom” in it.**
+
+  • Case insensitive matching for the name of the member. 
+
+  • Sort the records in descending order of member_ID. 
+
+- **Q2. Display the order_ID, address, member_ID, name of the HomeDeliveryOrder(s) that the address has “Hong Kong Island” in it.**
+
+  • member_ID and name are the member’s ID and the name of the member who made that HomeDeliveryOrder. 
+
+  • Case insensitive matching for the address of the HomeDeliveryOrder(s). 
+
+  • Sort the records in ascending order of the order_ID. 
+
+- **Q3. Display the member_ID, name and service_count of the member(s) who used the GroupOrder service for more than three times.**
+
+  • service_count is the number of times the member has used the GroupOrder service. 
+
+  • Sort the records in descending order of service_count, and then in ascending order of their member_ID. 
+
+- **Q4. Display the member_ID, name and service_count of the member(s) who used the LockerPickupOrder service for less than three times.**
+
+  • service_count is the number of times the member has used the LockerPickupOrder service. 
+
+  • The members who have not used any LockerPickupOrder service have to be included in the result (with service_count as 0). 
+
+  • Sort the records in descending order of the service_count, and then in ascending order of their member_ID. 
+
+- **Q5. Display the order_ID, total_weight of the GroupOrder that is heavier than 10kg. • total_weight is the sum of the weight of the packages of the GroupOrder.**
+
+  • Sort the records in descending order of the total_weight, and then in ascending order of the order_ID. 
+
+- **Q6. Display the order_ID, arrival_datetime, collect_datetime, and extra_hours of the LockerPickupOrder(s) that is collected after 48 hours from its arrival_datetime.**
+
+  • extra_hours is the number of extra hours that the LockerPickupOrder has not been collected after it has arrived at the locker for 48 hours. 
+
+  • You may use TIMESTAMPDIFF() to solve this question. 
+
+  • Sort records in descending order of the extra_hours, and then in ascending order of order_ID. 
+
+- **Q7. Display the order_ID, locker_name, service_area_name of the LockerPickupOrder with the Locker choose to be in the service area of “Hong Kong Island”.**
+
+  • The orders that store in the Lockers of the sub-ServiceArea(s) of “Hong Kong Island” will be included in the result. 
+
+  • locker_name is the name of the Locker of the LockerPickupOrder. • service_area_name is the name of the ServiceArea of the Locker. 
+
+  • To simplify this question, you can assume that there is at most a 3-layer hierarchy structure of the ServiceArea in the testing data.
+
+- **Q8. In q8_submit.php, display a drop-down menu that contains all the service_area_name and locker_count for the serviceArea without sub-serviceArea.**
+
+  • service_area_name is the name of the ServiceArea. 
+
+  • locker_count is the total number of Lockers in the ServiceArea. 
+
+  • Only list the record(s) with locker_count >= 1. 
+
+  • The drop-down menu contains options in the format of “service_area_name: locker_count”, sort the options in descending order of locker_count. 
+
+  • Add a submit button, and after clicking the submit button, the page will be directed from q8_submit.php to q8.php. 
+
+  In q8.php, display locker_ID, locker_name, and uncollected_order_count of the Lockers in the serviceArea selected from q8_submit.php
+
+  • uncollected_order_count is the total number of uncollected orders (with collect_datetime as NULL) of the Locker. 
+
+  • Sort the record in descending order of uncollected_order_count. 
+
+- **Q9. Update q8.php by making the locker_name of the locker (say, with locker_ID as x) a hyperlink to q9.php?locker_ID=x.**
+
+  • In q9.php, display the locker_ID, cell_number, member_ID, member’s name and contact_number of the LockerPickupOrder(s) in the locker x that is uncollected (with collect_datetime as NULL). Also list the package_count of the LockerPickupOrder. 
+
+  ​	o package_count is the number of packages in the LockerPickupOrder. 
+
+  ​	o Sort the records in descending order of package_count
 
 ## Sample Data
 

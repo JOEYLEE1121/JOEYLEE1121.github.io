@@ -13,15 +13,7 @@ score: 5.0 / 5.0
 
 ## Task
 
-![taskp1]({{site.url}}/images/2023-02-16-SocketProgramming/taskp1.png)
-
-![taskp2]({{site.url}}/images/2023-02-16-SocketProgramming/taskp2.png)
-
-![taskp3]({{site.url}}/images/2023-02-16-SocketProgramming/taskp3.png)
-
-![taskp4]({{site.url}}/images/2023-02-16-SocketProgramming/taskp4.png)
-
-
+Design a socket program that checks for network transmission speed for large TCP transfer, small TCP transfer, and UDP transfer
 
 ## Code
 
