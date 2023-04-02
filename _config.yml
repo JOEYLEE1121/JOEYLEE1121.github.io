@@ -20,7 +20,7 @@ title                    : "Joey Lee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chang Jun Lee"
-description              : "An amazing website."
+description              : "JOEY LEE's Personal Blog"
 url                      : "https://JOEYLEE1121.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
